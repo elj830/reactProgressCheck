@@ -43,8 +43,10 @@
   align-items: center;
   
   font-size: 16px;
+  margin-top: 5vh;
   margin-left: auto;
   margin-right: auto;
+  width: 90vw;
 }
 .email{
   width:100%;
@@ -53,12 +55,24 @@
   justify-content: space-between;
   border: 1px solid white;
   padding: 1vw;
+
+}
+
+.email:hover{
+  background-color: white;
+  border: 1px solid #282c34;
+  color: #282c34;
 }
 
 .subject{
-  margin-left: 20px;
   
-  
+  width: 45vw;
+  text-align: left;
+}
+
+.sender{
+  width: 45vw;
+  text-align: left;
 }
 
 .message{
@@ -69,7 +83,7 @@
 }
 
 #modal{
-  margin: 20%;
+  margin: 10%;
   background: black;
   
 }
