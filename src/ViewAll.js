@@ -37,7 +37,7 @@ class ViewAll extends React.Component{
         return(
             <div className="allEmails">
             <div className='allEmails'>{allEmails}</div>
-            <Modal isOpen={this.state.showModal} contentLabel="email">
+            <Modal isOpen={this.state.showModal} contentLabel="email" id='modal'>
         
           <button onClick={this.handleCloseModal}>Close Email</button>
             <ViewEmail email={this.props.emails[this.state.emailID]}/>

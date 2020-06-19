@@ -68,6 +68,8 @@
   margin-left: 10vw
 }
 
-.window{
+#modal{
+  margin: 20%;
+  background: black;
   
 }
