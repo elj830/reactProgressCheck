@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ViewAll from './ViewAll'
-import ViewEmail from './ViewEmail'
+
 
 
 class App extends React.Component {
