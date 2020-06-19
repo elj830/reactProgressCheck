@@ -17,10 +17,10 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* justify-content: center; */
+  /* font-size: calc(10px + 2vmin); */
   color: white;
 }
 
@@ -35,4 +35,39 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.allEmails{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.email{
+  width:100%;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  border: 1px solid white;
+  padding: 1vw;
+}
+
+.subject{
+  margin-left: 20px;
+  
+  
+}
+
+.message{
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin-left: 10vw
+}
+
+.window{
+  
 }
