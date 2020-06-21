@@ -26,8 +26,12 @@ class ViewAll extends React.Component{
     
 
     render(){
+        if (!this.state){
+            return null
+        }
+        
         let allEmails = this.props.emails.map((emails, index) => 
-        <div className='email' id={emails.id} onClick={() => this.setState({showModal: true, emailID: emails.id})}>
+            <div className='email' id={emails.id} onClick={() => this.setState({showModal: true, emailID: index})}>
             <div key = {emails.id} className='sender' id={emails.id}>From: {emails.sender.split('@')}</div>
             {/* <div key = {emails.id} className='recipient' id={emails.id}>To: {emails.recipient}</div> */}
             <div key = {emails.id} className='subject' id={emails.id}>{emails.subject}</div>
@@ -41,6 +45,7 @@ class ViewAll extends React.Component{
             <Modal isOpen={this.state.showModal} contentLabel="email" id='modal'>
         
           <button onClick={this.handleCloseModal}>Close Email</button>
+            {console.log(this.props.emails.emailID - 1)}
             <ViewEmail email={this.props.emails[this.state.emailID]}/>
             </Modal>
             
